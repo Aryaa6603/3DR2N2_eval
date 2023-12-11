@@ -23,5 +23,30 @@ This repository provides an implementation of the 3D-R2N2 model in PyTorch with 
 - Weights & Biases
 - Other dependencies specified in the requirements file.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+## Notebook Structure -
 
---- 
+- src
+    - callbacks
+        # Contains PyTorch Lightning callbacks for evaluation logging, checkpoints, 
+        # and random view numbers for each batch during training.
+        
+    - configuration
+        # Holds modules related to configuring the training pipeline, including
+        # hyperparameters, settings, and any other configuration details.
+        
+    - data
+        # Encompasses dataset modules and dataloaders, providing the necessary components
+        # for handling data loading and processing within the training pipeline.
+          
+    - model
+        # Houses the implementation of the 3D-R2N2 model or any other relevant models.
+        # This directory is dedicated to the model architecture and related functionalities.
+        
+    - scripts
+        # Contains scripts responsible for transforming datasets, specifically ShapeNet
+        # and 3d-Future, into your proprietary dataset format, ensuring compatibility.
+        
+    - utils
+        # Includes utility functions and modules that are generic and assist in various
+        # aspects of the implementation, offering reusable tools for different purposes.
